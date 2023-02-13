@@ -1,0 +1,122 @@
+
+{
+	"info": {
+		"_postman_id": "a3573014-ffc3-410f-bc42-a621fc9262d6",
+		"name": "Candelaria Chalub - Quinto Impacto Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22879657"
+	},
+	"item": [
+		{
+			"name": "Courses",
+			"item": []
+		},
+		{
+			"name": "Get all courses in te system",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sociology\",\r\n    \"description\": \"asdasd\",\r\n    \"timetable\": \"8:00\",\r\n    \"turn\": \"Evening\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/courses/create/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courses",
+						"create",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all teachers in the system",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete teacher by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get all students in the system",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juana\",\r\n    \"surname\": \"Perez\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/teachers/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"teachers",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inscribe a Student into a course",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
